@@ -1,9 +1,9 @@
 [gd_scene load_steps=4 format=3 uid="uid://drtylgnkhiyiv"]
 
 [ext_resource type="Script" path="res://scripts/movescript.gd" id="1_evqro"]
-[ext_resource type="Texture2D" uid="uid://deik8l0ejvh2m" path="res://icon.svg" id="2_omvqm"]
+[ext_resource type="Texture2D" uid="uid://cn00fp2koq5kv" path="res://assets/Citzel1.png" id="2_s4dqp"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vjx7t"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_xcipf"]
 
 [node name="Player" type="Node2D"]
 
@@ -11,7 +11,7 @@
 script = ExtResource("1_evqro")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("CircleShape2D_vjx7t")
+shape = SubResource("CircleShape2D_xcipf")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture = ExtResource("2_omvqm")
+texture = ExtResource("2_s4dqp")
