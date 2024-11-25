@@ -37,7 +37,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_hayd2"]
 resource_name = "walk_down"
-length = 0.5
+length = 0.5333
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -45,10 +45,10 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2, 3]
+"values": [1, 2, 3, 0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_55yov"]
@@ -67,6 +67,8 @@ script = ExtResource("1_evqro")
 shape = SubResource("CircleShape2D_xcipf")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(196, 383)
+scale = Vector2(0.421795, 0.421795)
 texture = ExtResource("2_hrhmw")
 hframes = 4
 
